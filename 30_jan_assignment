@@ -1,0 +1,101 @@
+Q.1. Write a program to accept percentage from the user and display the grade according to the following criteria:
+a=float(input("Enter your percentage:"))
+if a>90:
+    print("A grade")
+elif a>80 and a<=90:
+    print("B grade")
+elif a>=60 and a<=80:
+    print("C grade")
+elif a<60:
+    print("D grade")
+else:
+    print(“Wrong entry!”)
+
+Q.2.write a program to accept the cost p[rice of a bike and display the road tax to be paid according to the following criteria:
+price=float(input("Enter the cost price of bike:"))
+if price>100000:
+    print("Road tax:",(price*15)/100)
+elif price>50000 and price<=100000:
+    print("Road tax:",(price*10)/100)
+elif price<50000:
+    print("Road tax:",(price*5)/100)
+
+Q.3. Accept any city from the user and display monuments of that city.
+city=input("Enter the city name in given below\n Delhi,Agra,Jaipur\n")
+if city=='Delhi':
+    print("Red fort")
+elif city=='Agra':
+    print("Taj mahal")
+elif city=='Jaipur':
+    print("Jal mahal")
+else:
+    print("Wrong entry!")
+
+Q.4.Check many times a given number can be divided by 3 before it is less than or equal to 10.
+num=int(input("enter any number:"))
+i=0
+n=num
+while n!=0:
+   n=num//3
+   num=n
+   i=i+1
+   if num<=10:
+    break
+print(i,"times divided by 3")
+
+
+Q.5. Why and when to use while loop in python give a detailed description  with an example?
+Ans - When we want a special block of code multiple times then we use ‘while loop’ in python. It is also known as the entry control loop. In this loop firstly, condition will be checked then block will be execute.If condition is true then block is executed, otherwise not.
+syntax=>
+		while  condition:
+			Statement
+
+Example:
+	A program for print my name five time using while loop.
+
+		a=1
+		while a<=5:
+			print(“vikash chandra pal \n”)
+			a=a+1
+
+
+Q.6. Use nested while loop to print 3 different patern.
+Ans-
+First  pattern:
+
+a=1
+while  a<=5:
+	b=1
+while  b<=a:
+		print("*",end="  ")
+		b=b+1
+	print("  ")
+  a=a+1
+
+Second pattern:
+a=5
+while a>=1:
+	b=1
+	while b<=a:
+print("*",end="  ")
+b=b+1
+	print("  ")
+	a=a-1
+ 
+Third pattern:
+a=0
+while a<=5:
+	b=0
+	while b<=a:
+		print(b,end="  ")
+		b=b+1
+	print(" ")
+	a=a+1
+	 
+Q.7. Reverse a while loop to display  numbers from 10 to 1.
+Ans-  a=10
+	    while  a>=1:
+		  print(a)
+		  a=a-1
+
+Q.8. Sir/Maim  your  question number 7 and 8 are same... 
